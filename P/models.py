@@ -9,4 +9,4 @@ class Prescription(models.Model):
 	image = models.ImageField(upload_to='exhibited_picture/%Y/%m/%d', blank=False)
 	update_time = models.DateTimeField(blank=True)
 	def __unicode__(self):
-		return self.image_name
+		return self.image
