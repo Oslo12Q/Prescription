@@ -5,7 +5,6 @@ from django.db import models
 
 class Prescription(models.Model):
 	create_time = models.DateTimeField(auto_now=True)
-	image_name = models.CharField(max_length=200, blank=True)
 	image_json = models.TextField(blank=True)
 	image = models.ImageField(upload_to='exhibited_picture/%Y/%m/%d', blank=False)
 	update_time = models.DateTimeField(blank=True)
