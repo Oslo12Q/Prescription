@@ -159,7 +159,7 @@ def dev(request):
     data_list = []
     prescription = Prescription.objects.all()
     for _ in prescription:
-	id = _.id
+	id = _.prescription_id
 	prescription_name = _.prescription_name
 
 	
