@@ -12,7 +12,7 @@ class Prescription(models.Model):
     prescription_name = models.CharField(max_length=200,verbose_name = '姓名')
     prescription_age = models.IntegerField(verbose_name = '年龄')
     prescription_date = models.CharField(max_length=255, blank=True, null=True,verbose_name = '处方单时间')
-    prescription_cost = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True,verbose_name = '费用')
+    prescription_cost = models.CharField(max_length=255, blank=True, null=True,verbose_name = '费用')
     prescription_sex = models.CharField(max_length=255, blank=True, null=True,verbose_name = '性别')
     prescription_diagnose = models.CharField(max_length=255, blank=True, null=True,verbose_name = '诊断描述信息')
     prescription_hospital = models.CharField(max_length=255, blank=True, null=True,verbose_name = '医院')
